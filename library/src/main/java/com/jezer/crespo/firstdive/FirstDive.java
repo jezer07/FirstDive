@@ -22,8 +22,8 @@ public class FirstDive {
 
     public static FirstDive getInstance(Context c){
         if(mInstance==null)
-            return new FirstDive(c);
-        else
+            mInstance = new FirstDive(c);
+
               return mInstance;
     }
 
