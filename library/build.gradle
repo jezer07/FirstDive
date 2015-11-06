@@ -1,5 +1,69 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+publish {
+    groupId = 'com.jezercrespo'
+    artifactId = 'first-dive'
+    publishVersion = '1.0'
+    desc = 'An Android library for executing tasks during the very first launched of the app'
+    website = 'https://github.com/jezer07/FirstDive'
+}
 
+/*
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'FirstDive'
+    user = 'jezer07'
+    apiKey = 'f7520cca220087d75ce5f34201de24f1277b9054'
+    publishedGroupId = 'com.jezercrespo'
+    libraryName = 'FirstDive'
+    artifact = 'first-dive'
+
+    libraryDescription = 'An Android library that helps you do things when the app was first launched'
+
+    siteUrl = 'https://github.com/jezer07/FirstDive'
+    gitUrl = 'https://github.com/jezer07/FirstDive.git'
+
+    libraryVersion = '0.9.3'
+
+    developerId = 'jezer07'
+    developerName = 'Jezer Crespo'
+    developerEmail = 'Jezercrespo@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+*/
+
+
+/*bintray {
+    user = 'jezer07'
+    key = 'f7520cca220087d75ce5f34201de24f1277b9054'
+    publications = ['MyPublication']
+    configurations = ['archives']
+    pkg {
+        repo = 'maven'
+        name = 'first-dive'
+        licenses = ['Apache-2.0']
+        vcsUrl = 'https://github.com/jezer07/FirstDive.git'
+        version {
+            name = '1.0'
+            desc = 'First Release'
+            released  = new Date()
+            attributes = ['gradle-plugin': 'com.use.less:com.use.less.gradle:gradle-useless-plugin']
+        }
+    }
+}
+publishing {
+    publications {
+        MyPublication(MavenPublication) {
+            from components.java
+            groupId 'com.jezercrespo'
+            artifactId 'first-dive'
+            version '1.0'
+        }
+    }
+}*/
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.1"
@@ -23,3 +87,6 @@ dependencies {
     testCompile 'junit:junit:4.12'
 
 }
+/*apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'*/
+

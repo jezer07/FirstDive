@@ -9,8 +9,8 @@ import android.content.SharedPreferences;
 public class FirstDive {
 
 
-    public static final String FIRST_LAUNCH = "FirstDive";
-    public static final String HAS_LAUNCHED = "HAS_LAUNCHED";
+    private static final String FIRST_LAUNCH = "FirstDive";
+    private static final String HAS_LAUNCHED = "HAS_LAUNCHED";
     private Context mContext;
     private SharedPreferences mPref;
     private static FirstDive mInstance;
