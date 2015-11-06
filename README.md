@@ -1,5 +1,24 @@
 # FirstDive
 
+An Android library that helps you easily run tasks at the very first launch of your Application. (i.e., database seeding)
+
+
+## How to use
+
+Add this line to your gradle dependencies
+
+`compile 'com.jezercrespo.first-dive:1.0'`
+
+
+### Usage
+```java
+   FirstDive.getInstance(this).doOnFirstLaunch(new OnFirstLaunch() {
+            @Override
+            public void doOnFirstLaunch() {
+                // TODO your task to perform
+            }
+        });
+```
 
 
 ```
