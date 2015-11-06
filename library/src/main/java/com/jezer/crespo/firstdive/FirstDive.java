@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 /**
- * Created by phjecr on 11/6/15.
+ * Created by Jezer Crespo on 11/6/15.
  */
 public class FirstDive {
 
