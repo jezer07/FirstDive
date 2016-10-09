@@ -5,7 +5,10 @@ package com.jezer.crespo.firstdive;
  */
 public interface OnFirstLaunch {
 
-     void doOnFirstLaunch();
+    /**
+     * Method to be executed on first launch
+     */
+    void doOnFirstLaunch();
 
 
 }
