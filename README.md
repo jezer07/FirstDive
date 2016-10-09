@@ -7,7 +7,7 @@ An Android library that helps you easily run tasks at the very first launch of y
 
 Add this line to your gradle dependencies
 
-`compile 'com.jezercrespo.first-dive:1.0'`
+`compile 'com.jezercrespo.first-dive:1.1'`
 
 
 ### Usage
